@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>綠色消費：永續生活的選擇</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 antialiased">
+    <!-- 導航欄 -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm fixed w-full top-0 z-50 transition-all duration-300">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center space-x-2 text-green-600 hover:text-green-700 transition">
+                        <i class="fas fa-leaf text-2xl"></i>
+                        <span class="text-xl font-bold">永續生活 / Sustainable Living</span>
+                    </a>
+                </div>
+                
+                <!-- 導航選單 -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#reusable" class="nav-link group">
+                        <span class="flex items-center space-x-2 text-gray-600 hover:text-green-600 transition-colors">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>可重複使用 / Reusable</span>
+                        </span>
+                        <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-green-600"></span>
+                    </a>
+                    <a href="#eco-friendly" class="nav-link group">
+                        <span class="flex items-center space-x-2 text-gray-600 hover:text-green-600 transition-colors">
+                            <i class="fas fa-seedling"></i>
+                            <span>友善環境 / Eco-friendly</span>
+                        </span>
+                    </a>
+                    <a href="#transport" class="nav-link group">
+                        <span class="flex items-center space-x-2 text-gray-600 hover:text-green-600 transition-colors">
+                            <i class="fas fa-bicycle"></i>
+                            <span>綠色交通 / Green Transport</span>
+                        </span>
+                        <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-green-600"></span>
+                    </a>
+                    <a href="#challenges" class="nav-link group">
+                        <span class="flex items-center space-x-2 text-gray-600 hover:text-green-600 transition-colors">
+                            <i class="fas fa-tasks"></i>
+                            <span>永續挑戰 / Sustainability Challenges</span>
+                        </span>
+                        <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-green-600"></span>
+                    </a>
+                </div>
+
+                <!-- 行動版選單按鈕 -->
+                <button class="md:hidden flex items-center">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-16">
+        <!-- 英雄區塊 -->
+        <section class="min-h-screen relative overflow-hidden bg-gradient-to-br from-green-50 to-green-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+                <div class="text-center space-y-8">
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-900 tracking-tight">
+                        綠色消費：永續生活的選擇<br>
+                        <span class="text-3xl md:text-5xl">Green Consumption: A Sustainable Choice</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        讓我們一起為地球做出改變，創造更美好的未來<br>
+                        <span class="text-lg">Let's make changes together for a better future</span>
+                    </p>
+                    <div class="flex justify-center gap-4">
+                        <a href="#start-now" class="btn-primary">
+                            立即開始 / Start Now
+                        </a>
+                        <a href="#learn-more" class="btn-secondary">
+                            了解更多 / Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 統計數字 -->
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <span class="block text-4xl font-bold text-green-600 stat-number" data-target="1000">0</span>
+                        <span class="block text-gray-600">參與人數<br>Participants</span>
+                    </div>
+                    <div class="text-center">
+                        <span class="block text-4xl font-bold text-green-600 stat-number" data-target="5000">0</span>
+                        <span class="block text-gray-600">減少塑膠(kg)<br>Plastic Reduced</span>
+                    </div>
+                    <div class="text-center">
+                        <span class="block text-4xl font-bold text-green-600 stat-number" data-target="2000">0</span>
+                        <span class="block text-gray-600">減碳量(kg)<br>Carbon Reduced</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 可重複使用區段 -->
+        <section id="reusable" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 text-center">
+                    購買可重複使用的物品
+                    <span class="block text-2xl mt-1">Purchase Reusable Items</span>
+                </h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <p class="mb-4">
+                            <span class="block mb-2">現代生活中充斥著一次性用品，如塑膠袋、吸管和餐盒，不僅浪費資源，還對環境造成嚴重汙染。</span>
+                            <span class="block text-gray-600">Modern life is filled with disposable items like plastic bags, straws, and food containers, which not only waste resources but also cause severe environmental pollution.</span>
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex flex-col gap-1">
+                                <span>攜帶環保購物袋，拒絕塑膠袋</span>
+                                <span class="text-gray-600">Bring reusable shopping bags, say no to plastic bags</span>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <span>使用不鏽鋼吸管、可清洗的布巾</span>
+                                <span class="text-gray-600">Use stainless steel straws and washable cloth napkins</span>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <span>選擇耐用的水瓶、保鮮盒</span>
+                                <span class="text-gray-600">Choose durable water bottles and food containers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">
+                            <span class="block">塑膠減量計算器</span>
+                            <span class="block text-xl text-gray-600">Plastic Reduction Calculator</span>
+                        </h3>
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <h4 class="font-bold text-blue-800 mb-2">
+                                <span>計算方法說明：</span>
+                                <span class="block text-sm">Calculation Method:</span>
+                            </h4>
+                            <ul class="list-disc list-inside space-y-2 text-blue-700">
+                                <li class="flex flex-col">
+                                    <span>塑膠重量：每個塑膠製品以10克計算</span>
+                                    <span class="text-sm">Plastic weight: 10g per plastic item</span>
+                                </li>
+                                <li class="flex flex-col">
+                                    <span>碳排放：每公斤塑膠製品產生約6公斤CO2</span>
+                                    <span class="text-sm">Carbon emissions: 6kg CO2 per kg of plastic</span>
+                                </li>
+                                <li class="flex flex-col">
+                                    <span>用水量：每公斤塑膠製品製造約需100公升水</span>
+                                    <span class="text-sm">Water usage: 100L water per kg of plastic produced</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="space-y-4">
+                            <input type="number" id="plastic-count" class="w-full p-2 border border-gray-300 rounded" placeholder="每月避免使用的塑膠製品數量">
+                            <button id="calculate-plastic" class="w-full p-2 bg-green-600 text-white rounded">計算環境效益</button>
+                            <div id="calculation-result" class="mt-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="eco-friendly" class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12">
+                    支持友善環境的產品與服務
+                    <span class="block text-2xl mt-2">Support Eco-friendly Products and Services</span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- 產品卡片 1 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                        <div class="relative">
+                            <img src="{{ url_for('static', filename='images/organic.jpg') }}" 
+                                 alt="有機棉製品 / Organic Cotton Products" 
+                                 class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm">
+                                環保認證 / Eco-certified
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3">
+                                有機棉製品
+                                <span class="block text-sm text-gray-600">Organic Cotton Products</span>
+                            </h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-600">環保評分 / Eco Score</span>
+                                    <span class="text-green-600 font-medium">90分 / 90pts</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-green-500 h-2 rounded-full" style="width: 90%"></div>
+                                </div>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">有機認證 / Organic</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">零污染 / Zero Pollution</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">可回收 / Recyclable</span>
+                                </div>
+                            </div>
+                            <button data-product="organic-cotton" class="product-detail-btn mt-6 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition-colors duration-300">
+                                了解更多 / Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 產品卡片 2 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                        <div class="relative">
+                            <img src="{{ url_for('static', filename='images/bamboo.jpg') }}" 
+                                 alt="竹製餐具組" 
+                                 class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm">
+                                零廢棄 / Zero Waste
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3">
+                                竹製餐具組
+                                <span class="block text-sm text-gray-600">Bamboo Cutlery Set</span>
+                            </h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-600">環保評分 / Eco Score</span>
+                                    <span class="text-green-600 font-medium">95分 / 95pts</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-green-500 h-2 rounded-full" style="width: 95%"></div>
+                                </div>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">可分解 / Decomposable </span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">天然材質 / Natural Materials</span>
+                                </div>
+                            </div>
+                            <button data-product="bamboo-utensils" class="product-detail-btn mt-6 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition-colors duration-300">
+                                了解更多 / Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 產品卡片 3 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                        <!-- 同上方格式，可以加入更多產品 -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 修改產品詳情模態框 -->
+            <div id="product-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+                <div class="bg-white rounded-lg max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto">
+                    <div class="relative p-8">
+                        <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                            <i class="fas fa-times text-xl"></i>
+                        </button>
+                        <div id="product-details-content" class="space-y-6">
+                            <!-- 動態插入產品詳情 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 綠色交通區段 -->
+        <section id="transport" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12">
+                    綠色交通
+                    <span class="block text-2xl mt-2">Green Transportation</span>
+                </h2>
+                <div class="bg-gray-50 rounded-2xl p-8 max-w-3xl mx-auto">
+                    <h3 class="text-2xl font-semibold mb-6 text-center">
+                        交通碳足跡計算器
+                        <span class="block text-xl mt-1">Transportation Carbon Footprint Calculator</span>
+                    </h3>
+                    <!-- 在交通碳足跡計算器區段也加入說明 -->
+                    <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                        <h4 class="font-bold text-blue-800 mb-2">
+                            交通碳排放計算方式
+                            <span class="block text-sm">Transportation Carbon Emission Calculation Method</span>
+                        </h4>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li class="flex flex-col text-blue-700">
+                                <span>私家車：每公里產生171克CO2</span>
+                                <span class="text-sm">Private Car: 171g CO2 per kilometer</span>
+                            </li>
+                            <li class="flex flex-col text-blue-700">
+                                <span>公車：每公里產生82克CO2</span>
+                                <span class="text-sm">Bus: 82g CO2 per kilometer</span>
+                            </li>
+                            <li class="flex flex-col text-blue-700">
+                                <span>捷運：每公里產生55克CO2</span>
+                                <span class="text-sm">MRT: 55g CO2 per kilometer</span>
+                            </li>
+                            <li class="flex flex-col text-blue-700">
+                                <span>自行車/步行：0克CO2</span>
+                                <span class="text-sm">Bicycle/Walking: 0g CO2</span>
+                            </li>
+                            <li class="flex flex-col text-blue-700">
+                                <span>月計算：以每月22個工作天計算</span>
+                                <span class="text-sm">Monthly Calculation: Based on 22 working days</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="space-y-2">
+                            <input type="number" 
+                                   id="distance" 
+                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300" 
+                                   placeholder="請輸入每日通勤距離(公里) / Enter daily commute distance (km)">
+                        </div>
+                        <div class="space-y-2">
+                            <select id="transport-type" 
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-white">
+                                <option value="car">私家車 / Private Car</option>
+                                <option value="bus">公車 / Bus</option>
+                                <option value="bike">自行車 / Bicycle</option>
+                                <option value="walk">步行 / Walking</option>
+                                <option value="mrt">捷運 / MRT</option>
+                            </select>
+                        </div>
+                        <button id="calculate-transport" class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors duration-300 transform hover:scale-[1.02]">
+                            計算碳足跡 / Calculate Carbon Footprint
+                        </button>
+                        <div id="transport-result" class="mt-6 p-4 bg-green-50 rounded-lg hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 永續挑戰區段 -->
+        <section id="challenges" class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12">
+                    永續生活挑戰
+                    <span class="block text-2xl mt-2">Sustainability Living Challenges</span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- 環保知識王 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                        <div class="p-6">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-question-circle text-2xl text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-center mb-4">
+                                環保知識王
+                                <span class="block text-lg mt-1">Eco Knowledge Quiz</span>
+                            </h3>
+                            <p class="text-gray-600 text-center mb-6">
+                                測試你的環保知識
+                                <span class="block text-sm">Test Your Environmental Knowledge</span>
+                            </p>
+                            <!-- 添加問題內容容器 -->
+                            <div id="quiz-content" class="hidden">
+                                <div class="question-container mb-4">
+                                    <!-- 問題內容會在此顯示 -->
+                                </div>
+                                <div class="options-container space-y-2">
+                                    <!-- 選項會在此顯示 -->
+                                </div>
+                            </div>
+                            <button id="start-quiz" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                                開始測驗 / Start Quiz
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 環保益智遊戲 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                        <div class="p-6">
+                            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-gamepad text-2xl text-purple-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-center mb-4">
+                                環保益智遊戲
+                                <span class="block text-lg mt-1">Eco Memory Game</span>
+                            </h3>
+                            <div class="memory-game-container hidden">
+                                <div class="grid grid-cols-4 gap-2 mb-4">
+                                    <!-- 記憶卡片由 JavaScript 動態生成 -->
+                                </div>
+                                <div class="text-center mb-4">
+                                    <span class="text-purple-600">
+                                        配對次數 / Moves：<span id="moves-count">0</span>
+                                    </span>
+                                    <span class="ml-4 text-purple-600">
+                                        時間 / Time：<span id="time">00:00</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <button id="start-memory" class="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition-colors duration-300">
+                                開始遊戲 / Start Game
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h4 class="text-lg font-bold text-white">關於我們 / About Us</h4>
+                    <p class="text-white">推廣永續生活方式<br>Dedicated to promoting sustainable lifestyle</p>
+                    <div class="flex space-x-4 mt-2">
+                        <a href="#" class="text-white hover:text-green-400 transition-colors"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white hover:text-green-400 transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-green-400 transition-colors"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white">聯絡我們 / Contact Us</h4>
+                    <p class="text-white">Email:calliehuang1006@gmail.com</p>
+                </div>
+            </div>
+            <div class="mt-4 text-center">
+                <p class="text-white">綠色消費並非艱難的選擇，而是對未來的承諾<br>
+                Green consumption is not a difficult choice, but a promise to the future</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 自定義樣式 -->
+    <style>
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+            border-radius: 9999px;
+            background-color: #16a34a;
+            color: #ffffff;
+            font-weight: 500;
+            transition-property: background-color, transform;
+            transition-duration: 200ms;
+        }
+        .btn-primary:hover {
+            background-color: #15803d;
+            transform: translateY(-0.125rem);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+            border-radius: 9999px;
+            background-color: #e5e7eb;
+            color: #374151;
+            font-weight: 500;
+            transition-property: background-color, transform;
+            transition-duration: 200ms;
+        }
+        .btn-secondary:hover {
+            background-color: #d1d5db;
+            transform: translateY(-0.125rem);
+        }
+
+        .nav-link {
+            position: relative;
+            display: inline-block;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+
+        .animate-slide-up {
+            animation: slideUp 0.5s ease-out;
+        }
+    </style>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
